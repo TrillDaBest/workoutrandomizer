@@ -92,13 +92,15 @@ public class ExerciseDatabase {
                     .filter(e -> e.getCategory().equals("Shoulder") || e.getCategory().equals("Triceps"))
                     .collect(Collectors.toList());
                 break;
+            default:
+                // Return empty list for invalid split
+                break;
         }
 
         List<Exercise> result = new ArrayList<>();
         List<Exercise> available = new ArrayList<>(filtered);
         
         for (int i = 0; i < Math.min(count, filtered.size()); i++) {
-            if (available.isEmpty()) break;
             int index = random.nextInt(available.size());
             result.add(available.remove(index));
         }
