@@ -16,7 +16,7 @@ hs_err_pid*
 .vscode/
 .DS_Store
 
-# Manifest
+# Build artifacts
 MANIFEST.MF
 
 # Test utilities
