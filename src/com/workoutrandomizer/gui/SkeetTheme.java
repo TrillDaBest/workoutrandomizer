@@ -18,11 +18,11 @@ public class SkeetTheme {
     public static final Color SELECTED_COLOR = new Color(25, 25, 25);
     public static final Color BORDER_COLOR = new Color(0, 191, 255, 100);
     
-    // Fonts
-    public static final Font MAIN_FONT = new Font("Consolas", Font.PLAIN, 14);
-    public static final Font TITLE_FONT = new Font("Consolas", Font.BOLD, 18);
-    public static final Font HEADER_FONT = new Font("Consolas", Font.BOLD, 16);
-    public static final Font BUTTON_FONT = new Font("Consolas", Font.BOLD, 14);
+    // Fonts (with monospace fallback)
+    public static final Font MAIN_FONT = new Font(Font.MONOSPACED, Font.PLAIN, 14);
+    public static final Font TITLE_FONT = new Font(Font.MONOSPACED, Font.BOLD, 18);
+    public static final Font HEADER_FONT = new Font(Font.MONOSPACED, Font.BOLD, 16);
+    public static final Font BUTTON_FONT = new Font(Font.MONOSPACED, Font.BOLD, 14);
     
     // Dimensions
     public static final int SIDEBAR_WIDTH = 200;

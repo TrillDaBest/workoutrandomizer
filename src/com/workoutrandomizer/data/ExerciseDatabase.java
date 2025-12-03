@@ -69,6 +69,9 @@ public class ExerciseDatabase {
      * Get all exercises for a specific muscle group
      */
     public static List<Exercise> getExercisesByMuscleGroup(MuscleGroup muscleGroup) {
+        if (muscleGroup == null) {
+            throw new IllegalArgumentException("Muscle group cannot be null");
+        }
         return exercises.stream()
                 .filter(e -> e.getMuscleGroup() == muscleGroup)
                 .collect(Collectors.toList());

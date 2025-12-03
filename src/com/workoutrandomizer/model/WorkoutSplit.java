@@ -23,6 +23,6 @@ public enum WorkoutSplit {
     }
     
     public MuscleGroup[] getMuscleGroups() {
-        return muscleGroups;
+        return muscleGroups.clone();
     }
 }

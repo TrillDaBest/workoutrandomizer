@@ -52,7 +52,7 @@ public class WorkoutGenerator {
         List<Exercise> allExercises = ExerciseDatabase.getExercisesByMuscleGroup(muscleGroup);
         
         if (allExercises.isEmpty()) {
-            return new ArrayList<>();
+            return Collections.emptyList();
         }
         
         // Group exercises by name
