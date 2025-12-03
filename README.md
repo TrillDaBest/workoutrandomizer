@@ -27,12 +27,17 @@ mvn clean package
 
 ## Running
 
+**Using the convenience script (Linux/Mac):**
+```bash
+./run.sh
+```
+
+**Or manually:**
 ```bash
 java -jar target/workout-randomizer-1.0-SNAPSHOT.jar
 ```
 
-Or using Maven:
-
+**Or using Maven:**
 ```bash
 mvn compile exec:java -Dexec.mainClass="com.workoutrandomizer.WorkoutRandomizerApp"
 ```
